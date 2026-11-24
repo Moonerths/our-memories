@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Little Memories ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">♡ Our Memories</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#date">Date Planner</a>
+            <a href="#notes">Love Notes</a>
+        </div>
+    </nav>
+
+    <!-- HERO / HOME -->
+    <section class="hero" id="home">
+        <span class="sticker">🎀</span>
+        <p class="small-title">A LITTLE PLACE FOR US</p>
+        <h1>Our Little Memories ♡</h1>
+        <p class="subtitle">
+            Every picture tells our little story.
+            Every moment becomes a beautiful memory.
+        </p>
+
+<div class="hero-decoration">
+    <span>🌷</span>
+    <span>♡</span>
+    <span>🧸</span>
+    <span>🎀</span>
+    <span>✨</span>
+</div>
+
+<div class="welcome-note">
+    <span>💌 A NOTE FOR US</span>
+    <p>
+        This little corner belongs to us.
+        A place to keep our smiles, silly moments,
+        and all the memories we never want to forget.
+    </p>
+</div>
+
+<div class="memory-stats">
+    <div class="stat-card">
+        <span>📸</span>
+        <strong>Our Moments</strong>
+        <small>Captured with love</small>
+    </div>
+
+    <div class="stat-card">
+        <span>💗</span>
+        <strong>Our Story</strong>
+        <small>Written together</small>
+    </div>
+
+    <div class="stat-card">
+        <span>🌷</span>
+        <strong>Our Journey</strong>
+        <small>Still growing</small>
+    </div>
+</div>
+
+        <div class="couple-card">
+            <div class="avatar">👩🏻‍❤️‍👨🏻</div>
+            <h2>Our Love Story</h2>
+            <p>Two hearts, one beautiful journey.</p>
+            <p class="date-text">Together with love ♡</p>
+        </div>
+
+<!-- MUSIC PLAYER -->
+<div class="music-player">
+
+    <div class="music-icon">🎧</div>
+
+    <div class="music-info">
+        <h3>Our Favorite Song ♡</h3>
+        <p>A little soundtrack of us.</p>
+    </div>
+
+    <audio id="ourMusic" src="our-song.mp3" loop></audio>
+
+    <button id="musicButton" class="music-button">
+        ▶ Play Music
+    </button>
+
+</div>
+
+        <a href="#gallery" class="main-button">
+            Explore Our Memories ♡
+        </a>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+        <p class="small-title">OUR HAPPY PLACE</p>
+        <h2>Little Moments 📸</h2>
+        <p class="description">
+            Every little moment deserves to be remembered.
+        </p>
+
+        <div class="upload-box">
+            <h3>♡ Add Your Memories ♡</h3>
+            <p>Upload foto atau video kesayangan kalian.</p>
+
+            <input
+                type="file"
+                id="mediaInput"
+                accept="image/*,video/*"
+                multiple
+            >
+
+            <button class="pink-button" id="uploadButton">
+                + Upload Memories
+            </button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="polaroid">
+                <div class="placeholder">🌷</div>
+                <p>Our first memory</p>
+            </div>
+
+            <div class="polaroid">
+                <div class="placeholder">💗</div>
+                <p>Sweet moments</p>
+            </div>
+
+            <div class="polaroid">
+                <div class="placeholder">🧸</div>
+                <p>Forever memories</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATE PLANNER -->
+    <section class="section date-section" id="date">
+        <p class="small-title">LET'S MAKE A PLAN</p>
+        <h2>Our Next Date? 💌</h2>
+        <p class="description">
+            Mau pergi ke mana kita selanjutnya?
+        </p>
+
+        <div class="form-card">
+            <label for="datePlace">📍 Mau date di mana?</label>
+            <input
+                type="text"
+                id="datePlace"
+                placeholder="Contoh: Cafe, pantai, atau bioskop..."
+            >
+
+            <label for="dateTime">📅 Kapan kita pergi?</label>
+            <input type="date" id="dateTime">
+
+            <label for="dateActivity">💕 Mau ngapain?</label>
+            <select id="dateActivity">
+                <option value="">Pilih kegiatan</option>
+                <option value="Dinner romantis">Dinner romantis 🍝</option>
+                <option value="Nonton film">Nonton film 🎬</option>
+                <option value="Jalan-jalan">Jalan-jalan 🌷</option>
+                <option value="Piknik">Piknik 🧺</option>
+                <option value="Quality time">Quality time 💗</option>
+            </select>
+
+            <button class="pink-button" id="saveDate">
+                Save Our Date ♡
+            </button>
+
+            <div id="dateResult" class="result-box"></div>
+        </div>
+    </section>
+
+    <!-- LOVE NOTES -->
+    <section class="section" id="notes">
+        <p class="small-title">A LETTER FROM THE HEART</p>
+        <h2>Little Love Notes 💌</h2>
+        <p class="description">
+            Tuliskan sesuatu yang ingin kamu kenang.
+        </p>
+
+        <div class="form-card">
+            <label for="noteName">Nama pengirim</label>
+            <input
+                type="text"
+                id="noteName"
+                placeholder="Nama kamu..."
+            >
+
+            <label for="noteMessage">Kesan dan pesan</label>
+            <textarea
+                id="noteMessage"
+                placeholder="Terima kasih sudah menjadi bagian dari cerita ini..."
+                rows="5"
+            ></textarea>
+
+            <button class="pink-button" id="saveNote">
+                Save My Love Note ♡
+            </button>
+
+<button class="pink-button" id="generateReceipt">
+    Generate Our Love Receipt 🎀
+</button>
+
+
+            <div id="notesList"></div>
+        </div>
+    </section>
+
+<!-- LOVE RECEIPT -->
+<section class="receipt-section" id="receiptSection" hidden>
+
+    <p class="small-title">A LITTLE MEMORY TO KEEP</p>
+    <h2>Our Love Receipt 💗</h2>
+
+    <div class="receipt-card" id="receiptCard">
+
+        <div class="receipt-header">
+            <div class="receipt-icon">🎀</div>
+            <h2>OUR LITTLE MEMORIES</h2>
+            <p>A receipt of our sweetest moments</p>
+            <p>♡ ♡ ♡ ♡ ♡</p>
+        </div>
+
+        <div class="receipt-divider"></div>
+
+        <h3>OUR DATE DETAILS</h3>
+
+        <div class="receipt-row">
+            <span>Location</span>
+            <strong id="receiptPlace">-</strong>
+        </div>
+
+        <div class="receipt-row">
+            <span>Date</span>
+            <strong id="receiptDate">-</strong>
+        </div>
+
+        <div class="receipt-row">
+            <span>Activity</span>
+            <strong id="receiptActivity">-</strong>
+        </div>
+
+        <div class="receipt-divider"></div>
+
+        <h3>A LITTLE MESSAGE</h3>
+
+        <p class="receipt-sender" id="receiptName">From: -</p>
+
+        <p class="receipt-message" id="receiptMessage">
+            Every moment with you is special.
+        </p>
+
+        <div class="receipt-photo-section">
+            <h3>OUR LITTLE PHOTO MOMENTS</h3>
+            <div class="receipt-photo-grid" id="receiptPhotoGrid">
+                <p class="receipt-no-photos">Your favorite photos will appear here ♡</p>
+            </div>
+        </div>
+
+        <div class="receipt-divider"></div>
+
+        <div class="receipt-total">
+            <span>TOTAL HAPPINESS</span>
+            <strong>INFINITE ♡</strong>
+        </div>
+
+        <div class="receipt-footer">
+            <p>Thank you for being my favorite person.</p>
+            <h2>LOVE YOU ALWAYS ♡</h2>
+            <p>Keep this little memory forever.</p>
+            <div class="receipt-hearts">♡ 🎀 ♡</div>
+        </div>
+
+    </div>
+
+    <button class="pink-button" id="downloadReceipt">
+        Download Our Receipt ↓
+    </button>
+
+    <p class="receipt-hint">
+        Save it, share it, and keep this memory forever.
+    </p>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Made with Love ♡</h3>
+        <p>Our memories, our little universe. 🎀</p>
+    </footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
