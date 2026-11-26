@@ -1,0 +1,16 @@
+Taruh foto kamu di folder ini. Nama file harus sama dengan yang ada di index.html (cari "images/").
+Format .jpg atau .png. Jika file belum ada, bagian fotonya otomatis disembunyikan.
+
+profil.jpg                       foto profil (lingkaran di slide Profil)
+pengalaman-sensus-2026.jpg       slide Pengalaman kerja
+pengalaman-kejari-batang.jpg
+pengalaman-sensus-2023.jpg
+organisasi-genbi.jpg             slide Organisasi
+organisasi-senat.jpg
+organisasi-lkm.jpg
+pencapaian-qris.jpg              slide Pencapaian
+pencapaian-duta-fh.jpg
+galeri-1.jpg sampai galeri-8.jpg slide Galeri
+
+Tips: kecilkan foto ke lebar sekitar 1600 px (di bawah 500 KB) supaya website cepat dibuka.
+Untuk menambah foto baru, salin satu baris <figure class="ph">...</figure> di index.html lalu ganti nama file dan keterangannya.
